@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dogs Exercise</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap\dist\css\bootstrap.css" />
+</head>
+
+<body>
+    <button type="button" class="btn btn-dark showdogs middle">Show dogs</button>
+</br>
+</br>
+    <div id="dogs-container" class="listmiddle"></div>
+    <script id="dogs-template" type="text/x-handlebars-template">
+            <ul class="list-group">
+              {{#each dogs}}
+                <li class="list-group-item">Meet {{name}} he is {{age}} years old <img style="width: 100px" src="{{image}}"></li>
+              {{/each}}
+            </ul>
+          </script>
+
+    <script src="jquery\dist\jquery.js"></script>
+    <script src="handlebars\dist\handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
